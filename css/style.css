@@ -1,0 +1,151 @@
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .smiley {
+        --smiley: 400px;
+        width: var(--smiley);
+        height: var(--smiley);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        overflow: hidden;
+        background-color: yellow;
+        position: relative;
+    }
+    
+    .eye {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        transform: rotate(138deg);
+        -webkit-transform: rotate(138deg);
+        -moz-transform: rotate(138deg);
+        -ms-transform: rotate(138deg);
+        -o-transform: rotate(138deg);
+    }
+    
+    .left {
+        top: calc(var(--smiley) * .3);
+        left: calc(var(--smiley) * .2);
+        background-color: red;
+        border: none;
+    }
+    
+    .left:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 37%;
+        right: 0;
+        border-radius: 0 0 100% 100%;
+        -webkit-border-radius: 0 0 100% 100%;
+        -moz-border-radius: 0 0 100% 100%;
+        -ms-border-radius: 0 0 100% 100%;
+        -o-border-radius: 0 0 100% 100%;
+        overflow: hidden;
+        background-color: red;
+    }
+    
+    .left:after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 1.2rem;
+        border-radius: 0 0 100% 100%;
+        -webkit-border-radius: 0 0 100% 100%;
+        -moz-border-radius: 0 0 100% 100%;
+        -ms-border-radius: 0 0 100% 100%;
+        -o-border-radius: 0 0 100% 100%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        background-color: red;
+    }
+    
+    .right {
+        top: calc(var(--smiley) * .3);
+        right: calc(var(--smiley) * .2);
+        background-color: red;
+        border: none;
+    }
+    
+    .right:before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: 37%;
+        right: 0;
+        border-radius: 0 0 100% 100%;
+        -webkit-border-radius: 0 0 100% 100%;
+        -moz-border-radius: 0 0 100% 100%;
+        -ms-border-radius: 0 0 100% 100%;
+        -o-border-radius: 0 0 100% 100%;
+        overflow: hidden;
+        background-color: red;
+    }
+    
+    .right:after {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        right: 1.2rem;
+        border-radius: 0 0 100% 100%;
+        -webkit-border-radius: 0 0 100% 100%;
+        -moz-border-radius: 0 0 100% 100%;
+        -ms-border-radius: 0 0 100% 100%;
+        -o-border-radius: 0 0 100% 100%;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        background-color: red;
+    }
+    
+    .mouth {
+        width: 200px;
+        height: 140px;
+        border: 1px solid black;
+        position: absolute;
+        bottom: 17%;
+        left: calc(var(--smiley) * .25);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        background-color: black;
+    }
+    
+    .mouth:before {
+        width: 320px;
+        height: 80px;
+        position: absolute;
+        content: "";
+        bottom: 45%;
+        background-color: yellow;
+        left: -30%;
+        border-radius: 100%;
+    }
